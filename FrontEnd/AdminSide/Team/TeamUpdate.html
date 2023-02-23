@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GT3 Pro Stats</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../ClienteSide/styles/style.css">
+    <script src="../../node_modules/jquery/dist/jquery.js" defer></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.js" defer></script>
+    <script src="./TeamUpdate.js" defer></script>
+</head>
+<body>
+<!-- HEADER -->
+<header class="main-header sticky-top">
+    <div class="logo"><a href="../../ClienteSide/index.html">
+        <img alt="GT3 Stats " src="../../ClienteSide/img/GT3_Pro_Stats-removebg-preview.png">
+    </a>
+    </div>
+    <h1>Admin Side</h1>
+    <nav class="desktop-main-menu">
+        <ul>
+            <li><a href="../../ClienteSide/index.html"> Client Side</a></li>
+            <li><a href="../Admin/adminHome.html">HomeAdmin</a></li>
+            <li><a href="../Driver/DriverAdmin.html">Drivers</a></li>
+            <li><a href="../Team/TeamAdmin.html">Team</a></li>
+            <li><a href="../Car/CarAdmin.html">Cars</a></li>
+            <li><a href="../Championship/ChampionshipAdmin.html">Championships</a></li>
+            <li><a href="../Race/RaceAdmin.html">Races</a></li>
+            <li><a href="../RaceResult/RaceResultAdmin.html">RaceResult</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- Fin del NavBar -->
+
+<div id="principal" class="container d-flex flex-column mb-5">
+    <h1 class="text-black text-center mt-5 mb-3">Update a Team</h1>
+
+    <div class="container w-50 d-flex flex-column align-items-center">
+        <select id="updateSelect" class="form-select" aria-label="Default select example">
+            <option selected hidden>Select the Team you want to Update</option>
+
+        </select>
+    </div>
+    <div id="showTeam" class="container mt-2 d-flex flex-column">
+
+    </div>
+
+
+</div>
+
+
+</body>
+</html>

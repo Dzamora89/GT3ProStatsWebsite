@@ -1,0 +1,60 @@
+<!-- Todo: All --><!doctype html>
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GT3 Pro Stats</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../ClienteSide/styles/style.css">
+    <script src="../../node_modules/jquery/dist/jquery.js" defer></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.js" defer></script>
+    <script src="./TeamAdmin.js" defer></script>
+</head>
+<body>
+<!-- HEADER -->
+<header class="main-header sticky-top">
+    <div class="logo"><a href="../../ClienteSide/index.html">
+        <img alt="GT3 Stats " src="../../ClienteSide/img/GT3_Pro_Stats-removebg-preview.png">
+    </a>
+    </div>
+    <h1>Admin Side</h1>
+    <nav class="desktop-main-menu">
+        <ul>
+            <li><a href="../../ClienteSide/index.html"> Client Side</a></li>
+            <li><a href="../Admin/adminHome.html">HomeAdmin</a></li>
+            <li><a href="../Driver/DriverAdmin.html">Drivers</a></li>
+            <li><a href="../Team/TeamAdmin.html">Team</a></li>
+            <li><a href="../Car/CarAdmin.html">Cars</a></li>
+            <li><a href="../Championship/ChampionshipAdmin.html">Championships</a></li>
+            <li><a href="../Race/RaceAdmin.html">Races</a></li>
+            <li><a href="../RaceResult/RaceResultAdmin.html">RaceResult</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- Fin del NavBar -->
+
+<div class="container mt-5 d-flex align-items-center flex-column">
+    <div class="card" style="width: 18rem;">
+        <div class="card-body text-black ">
+            <h5 class="card-title">Desea borrar este coche?</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Nombre del Coche</h6>
+            <p class="card-text">Marca de Coche</p>
+            <p class="card-text">Dorsal del Coche</p>
+            <p class="card-text">Pilotos del coche</p>
+            <p class="card-text">XXXX</p>
+        </div>
+    </div>
+    <button class="btn bg-success align-items w-50 m-auto mt-5" onclick="createRace()">Delete Car</button>
+    <button class="btn bg-danger align-items w-50 m-auto mt-5" onclick="createRace()">NO DELETE Car</button>
+    <button class="btn bg-black  text-white align-items w-50 m-auto mt-5" onclick="createRace()">Volver</button>
+</div>
+
+
+
+
+
+</body>
+</html>

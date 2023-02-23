@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GT3 Pro Stats</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../ClienteSide/styles/style.css">
+    <script src="../../node_modules/jquery/dist/jquery.js" defer></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.js" defer></script>
+    <script src="./DriverCreate.js" defer></script>
+</head>
+<body>
+<!-- HEADER -->
+<header class="main-header sticky-top">
+    <div class="logo"><a href="../../ClienteSide/index.html">
+        <img alt="GT3 Stats " src="../../ClienteSide/img/GT3_Pro_Stats-removebg-preview.png">
+    </a>
+    </div>
+    <h1>Admin Side</h1>
+    <nav class="desktop-main-menu">
+        <ul>
+            <li><a href="../../ClienteSide/index.html"> Client Side</a></li>
+            <li><a href="../Admin/adminHome.html">HomeAdmin</a></li>
+            <li><a href="../Driver/DriverAdmin.html">Drivers</a></li>
+            <li><a href="../Team/TeamAdmin.html">Team</a></li>
+            <li><a href="../Car/CarAdmin.html">Cars</a></li>
+            <li><a href="../Championship/ChampionshipAdmin.html">Championships</a></li>
+            <li><a href="../Race/RaceAdmin.html">Races</a></li>
+            <li><a href="../RaceResult/RaceResultAdmin.html">RaceResult</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- Fin del NavBar -->
+<div id="principal" class="container d-flex flex-column justify-content-center">
+    <h1 class="text-black text-center mt-5 mb-3">Create a Driver</h1>
+<form class="d-flex flex-wrap justify-content-center w-100 gap-3">
+    <div class="input-group mb-3 w-25">
+        <span class="input-group-text" id="firstName">First Name</span>
+        <input id="firstNameInput" type="text" class="form-control" placeholder="First Name" aria-label="FirstName" aria-describedby="First-Name">
+    </div>
+    <div class="input-group mb-3 w-25">
+        <span class="input-group-text" id="lastName">Last Name</span>
+        <input id="lastNameInput" type="text" class="form-control" placeholder="Last Name" aria-label="LastName" aria-describedby="Last-Name">
+    </div>
+    <div class="input-group mb-3 w-25">
+        <span class="input-group-text" id="Country">Country</span>
+        <input id="countryInput" type="text" class="form-control" placeholder="Country" aria-label="Country" aria-describedby="Country">
+    </div>
+    <div class="input-group mb-3 w-25">
+        <span class="input-group-text" id="DriverWebsite">Driver Website</span>
+        <input id="urlInput" type="url" class="form-control" placeholder="Driver Website" aria-label="DriverWebsite" aria-describedby="Driver-Website">
+    </div>
+    <div class="input-group mb-3 w-25">
+        <span class="input-group-text" id="Twitter">Twitter @</span>
+        <input id="twitterInput" type="text" class="form-control" placeholder="Twitter Handle" aria-label="Twitter" aria-describedby="Twitter">
+    </div>
+    <div class="input-group mb-3 w-25">
+        <span class="input-group-text" id="DriverStatus">Driver Status</span>
+        <input id="driverStatusInput" type="text" class="form-control" placeholder="Active" aria-label="DriverStatus" value="Active" aria-describedby="Driver-Status">
+    </div>
+    <div class="input-group mb-3 w-25">
+        <span class="input-group-text" id="DriverELo">Initial Elo Rating</span>
+        <input id="initialEloInput" type="number" class="form-control" placeholder="Elo Rating" value="1500" aria-label="LastName" aria-describedby="Elo-Rating">
+    </div>
+    <div class="input-group mb-3 w-25">
+        <span class="input-group-text" id="DriverbirthDate">Driver birth date</span>
+        <input id="birthDayInput" type="date" class="form-control" placeholder="DriverAge"  aria-label="LastName" aria-describedby="Elo-Rating">
+    </div>
+
+</form>
+    <button class="btn bg-success align-items w-50 m-auto mt-5" onclick="createDriver()">Create Driver</button>
+</div>
+
+
+
+</body>
+</html>
